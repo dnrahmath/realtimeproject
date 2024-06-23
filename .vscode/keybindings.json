@@ -1,0 +1,49 @@
+// /https://stackoverflow.com/questions/48945319/a-keybindings-json-per-workspace-in-visual-studio-code
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+alt+s",
+        "command": "workbench.action.files.saveAll",
+        "when": "config.workspaceKeybindings.myAwesomeTask.enabled" // Must be "config.{settingName}"
+    },
+    {
+        "key": "shift+alt+p",
+        "command": "git.unstageAll",
+        "when": "config.workspaceKeybindings.myAwesomeTask.enabled" // Must be "config.{settingName}"
+    },
+    {
+        "key": "shift+alt+[",
+        "command": "git.stageAll",
+        "when": "config.workspaceKeybindings.myAwesomeTask.enabled" // Must be "config.{settingName}"
+    },
+    {
+        "key": "shift+alt+]",
+        "command": "git.commitAll",
+        "when": "config.workspaceKeybindings.myAwesomeTask.enabled" // Must be "config.{settingName}"
+    },
+    {
+        "key": "shift+alt+\\",
+        "command": "git.sync",
+        "when": "config.workspaceKeybindings.myAwesomeTask.enabled" // Must be "config.{settingName}"
+    },
+    {
+        "key": "alt+\\",
+        "command": "git.sync"
+    },
+    {
+        "key": "alt+[",
+        "command": "git.stageAll"
+    },
+    {
+        "key": "shift+alt+[",
+        "command": "git.unstageAll"
+    },
+    {
+        "key": "alt+]",
+        "command": "git.commitAll"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.files.saveAll"
+    }
+]
